@@ -1,0 +1,6 @@
+Date;Type;Issuer;Recipient;Purpose;IBAN;Amount;Währung
+2024-01-01;Transfer;Sample Company;;Salary;DE89370400440532013000;1000.0;EUR
+2024-01-02;Withdraw;;;;;-200;EUR
+2024-01-03;Transfer;Some Person;;private gift;DE89370400440532013000;100.0;EUR
+2024-01-04;Transfer;;Grocery Store;Thank you for shopping with us!;DE89370400440532013000;-34.67;EUR
+2024-01-05;Transfer;;Landlord;Rent;DE89370400440532013000;-500.0;EUR

@@ -1,0 +1,5 @@
+.idea
+__pycache__/
+output/expenses.csv
+output/income.csv
+output/output.txt
