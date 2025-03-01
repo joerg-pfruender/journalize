@@ -33,11 +33,14 @@ def is_one_of(string, list_of_strings):
     return string in list_of_strings
 
 
-def contains_pattern(list_of_patterns, string):
-    for pattern in list_of_patterns:
-        if pattern in string:
-            return True
-    return False
+def contains_pattern(list_of_patterns, string_to_check):
+    if isinstance(list_of_patterns, list):
+        for pattern in list_of_patterns:
+            if pattern in string_to_check:
+                return True
+            return False
+    else:
+        return list_of_patterns in string_to_check
 
 # https://stackoverflow.com/questions/5574702/how-do-i-print-to-stderr-in-python
 def eprint(*args, **kwargs):

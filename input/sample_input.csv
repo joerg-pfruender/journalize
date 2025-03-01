@@ -4,3 +4,6 @@ Date;Type;Issuer;Recipient;Purpose;IBAN;Amount;Währung
 2024-01-03;Transfer;Some Person;;private gift;DE89370400440532013000;100.0;EUR
 2024-01-04;Transfer;;Grocery Store;Thank you for shopping with us!;DE89370400440532013000;-34.67;EUR
 2024-01-05;Transfer;;Landlord;Rent;DE89370400440532013000;-500.0;EUR
+2024-02-05;Transfer;;Person1;private gift;DE02120300000000202051;-50.0;EUR
+2024-02-05;Transfer;;Charity;private gift;DE02701500000000594937;-200.0;EUR
+2024-02-05;Transfer;;Person2;refund expenses;DE02120300000000202051;-42.23;EUR
