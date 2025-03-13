@@ -59,7 +59,7 @@ class TransactionType:
                 if not purpose_found:
                     return False
             if self.iban:
-                iban_found = self.iban.casefold() == transaction[iban].casefold()
+                iban_found = is_one_of_ignore_case(transaction[iban], self.iban)
                 if not iban_found:
                     return False
             return True

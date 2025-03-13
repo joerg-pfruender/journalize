@@ -42,6 +42,19 @@ def contains_pattern(list_of_patterns, string_to_check):
     else:
         return list_of_patterns in string_to_check
 
+def is_one_of_ignore_case(string, list_of_strings):
+    if isinstance(list_of_strings, list):
+        for element in list_of_strings:
+            if is_equal_ignore_case(element, string):
+                return True
+        return False
+    else:
+        return is_equal_ignore_case(string, list_of_strings)
+
+def is_equal_ignore_case(string1, string2):
+    return string1.casefold() == string2.casefold()
+
+
 # https://stackoverflow.com/questions/5574702/how-do-i-print-to-stderr-in-python
 def eprint(*args, **kwargs):
     print(*args, file=stdErr, **kwargs)
