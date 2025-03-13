@@ -47,6 +47,7 @@ class DemoTestCase(unittest.TestCase):
         self.assertEqual(True, utils.contains_pattern(['gift'], 'some gift random'))
         self.assertEqual(True, utils.contains_pattern('gift', 'some gift random'))
         self.assertEqual(True, utils.contains_pattern(['gift'], 'no gift'))
+        self.assertEqual(True, utils.contains_pattern(['other', 'gift'], 'no gift'))
         self.assertEqual(False, utils.contains_pattern('gift', 'refund expenses'))
         self.assertEqual(False, utils.contains_pattern(['gift'], 'refund expenses'))
 

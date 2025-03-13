@@ -38,7 +38,7 @@ def contains_pattern(list_of_patterns, string_to_check):
         for pattern in list_of_patterns:
             if pattern in string_to_check:
                 return True
-            return False
+        return False
     else:
         return list_of_patterns in string_to_check
 
